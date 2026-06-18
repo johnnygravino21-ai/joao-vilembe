@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabalho Individual - João Gravino</title>
+<link rel="stylesheet"  href="vilembe.css">
+<!-- 1. MathJax para fórmulas matemáticas-->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+<!-- 2. Cabeçalho e ligação com as secções a baixo-->
+<header>
+    <div class="formula-header">
+
+        <div class="formula">
+            <h3>𝑅</h3>
+            <h1>Ramanunjan Academy</h1>
+            <p>Excelência no ensino e inovação académica</p>
+        </div>
+
+    </div>
+</header>
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#estudante">Área do Estudante</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+<!-- 3. secções de Conteúdo e exemplos de Latex -->
+<div class="hero">
+    <h2>Bem-vindo ao futuro da educação</h2>
+    <p>Formamos líderes preparados para o mundo moderno</p>
+</div>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+     <p>A <strong>Ramanunjan Academy</strong> foi fundada em 2026 pelo empresário e professor <strong>João Gravino</strong>, com a missão de promover educação de excelência, inovação e desenvolvimento científico. O nome da instituição é uma homenagem ao génio matemático <strong>Srinivasa Ramanujan</strong>, reconhecido pelas suas extraordinárias contribuições para a teoria dos números, séries infinitas e frações contínuas.</p><p>
+Uma das contribuições mais famosas de Srinivasa Ramanujan foi a descoberta de séries infinitas extraordinariamente eficientes para o cálculo de π:
+</p>
+
+\[
+\frac{1}{\pi}
+=
+\frac{2\sqrt{2}}{9801}
+\sum_{k=0}^{\infty}
+\frac{(4k)!\,(1103+26390k)}
+{(k!)^4\,396^{4k}}
+\]
+
+<p>
+Esta fórmula demonstra a profundidade do génio matemático de Ramanujan e continua a ser estudada por matemáticos em todo o mundo.
+</p>
+</section>
+<section>
+    <h3>Missão</h3>
+    <p>Promover educação de qualidade, investigação científica e inovação,
+        formando profissionais competentes e cidadãos responsáveis.</p>
+    
+    <h3>Visão</h3>
+    <p>Ser uma referência nacional e internacional em ensino, investigação e
+        desenvolvimento humano.</p>
+    
+    <h3>Valores</h3>
+    <ul>
+        <li>Excelência académica</li>
+        <li>Ética e integridade</li>
+        <li>Inovação</li>
+        <li>Responsabilidade social</li>
+        <li>Inclusão</li>
+        <li>Compromisso com a ciência</li>
+    </ul>
+   
+</section>
+<!-- 4. secção dos cursos e a permissão da abertura da janela modal dos memos cursos -->
+<section id="cursos">
+    <h2>Cursos Disponíveis</h2>
+
+    <div class="grid">
+        <div class="card curso" onclick="abrirCurso('matematica')">
+            Matemática
+        </div>
+        <div class="card curso" onclick="abrirCurso('informatica')">
+            Informática
+        </div>
+        <div class="card curso" onclick="abrirCurso('gestao')">
+            Gestão de Empresas
+        </div>
+        <div class="card curso" onclick="abrirCurso('educacao')">
+            Educação
+        </div>
+
+    </div>
+</section>
+<!-- 5. secção das imagens-->
+<section id="galeria" class="gallery-section">
+    <div class="container">
+
+        <div class="section-header">
+            <h2>Galeria</h2>
+            <p>Conheça alguns dos espaços e atividades da Ramanunjan Academy.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- Sala de Aula -->
+            <div class="gallery-item">
+                <img src="sala.png"
+                     alt="Professor a ensinar estudantes universitários">
+
+                <div class="gallery-content">
+                    <h3>Formação Universitária</h3>
+                    <p>
+                        Aulas dinâmicas focadas em matemática,
+                        tecnologia, empreendedorismo e desenvolvimento
+                        académico.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Laboratórios -->
+            <div class="gallery-item">
+                <img src="laboratorio.png"
+                     alt="Seminário académico">
+
+                <div class="gallery-content">
+                    <h3>Laboratórios Modernos</h3>
+                    <p>
+                        Sessões de investigação que promovem pensamento
+                        crítico, inovação e liderança.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Biblioteca -->
+            <div class="gallery-item">
+                <img src="bibilioteca.png"
+                     alt="Biblioteca Ramanunjan Academy">
+
+                <div class="gallery-content">
+                    <h3>Biblioteca da Academia</h3>
+                    <p>
+                        Um ambiente moderno de estudo, investigação
+                        e desenvolvimento intelectual.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Eventos -->
+            <div class="gallery-item">
+                <img src="eventos.png"
+                     alt="Eventos académicos">
+
+                <div class="gallery-content">
+                    <h3>Eventos Académicos</h3>
+                    <p>
+                        Olimpíadas, palestras, workshops,
+                        conferências e cerimónias de graduação.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- 6 secção da Área dos estudantes.OBS.: não desenvolvi esta secção, pois, o codigo já está um pouco estenso -->
+<section id="estudante">
+    <h2>Área do Estudante</h2>
+    <ul>
+        <li>Notas e avaliações</li>
+        <li>Horários das aulas</li>
+        <li>Material de apoio</li>
+        <li>Inscrição em disciplinas</li>
+    </ul>
+</section>
+<!-- 7. secção dos contactos -->
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <p>📍 Namibe, Angola</p>
+
+    <p>📞 <a href="tel:+244941723925">+244941723925</a></p>
+
+    <p>✉️ <a href="mailto:RamanunjanAcademy26@gmail.com">RamanunjanAcademy26@gmail.com</a></p>
+    
+    <h3>Envie uma mensagem</h3>
+    <form>
+        <input type="text" placeholder="Seu nome">
+        <input type="email" placeholder="Seu e-mail">
+        <textarea rows="4" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section>
+    <h2>AUTOR</h2>
+    <button id="btnEquipa" class="btn-equipa">Ver Dados</button>
+</section>
+ <!-- 8.Janela Modal dos dados do estudante -->
+<div id="modalEquipa" class="modal">
+    <div class="modal-content">
+       <span id="fecharModal" class="fechar">&times;</span>
+
+        <h3>Dados do Estudante</h3>
+        <p><strong>Nome:</strong> João Gravino </p>
+        <p><strong>Curso:</strong> Ensino da Matemática</p>
+        <p><strong>Ano:</strong> 4º</p>
+
+    </div>
+</div>
+<!-- 9. Janela Modal dos Cursos -->
+<div id="modalCurso" class="modal">
+    <div class="modal-content">
+       <span class="fechar" onclick="fecharCurso()">&times;</span>
+        <h2 id="tituloCurso"></h2>
+        <p id="descricaoCurso"></p>
+        <p><strong>Importância:</strong></p>
+        <p id="importanciaCurso"></p>
+        <p><strong>Programa:</strong></p>
+        <ul id="programaCurso"></ul>
+        <p><strong>Custo:</strong></p>
+        <p id="custoCurso"></p>
+
+    </div>
+</div>
+<!-- 10. Rodapé e ligação ao ficheiro JavaScript -->
+<footer>
+    
+     <p>© 2026 Ramanunjan Academy</p>
+    <p>Desenvolvido por João V. J. Gravino</p>
+
+    <p>Última atualização: Junho de 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
