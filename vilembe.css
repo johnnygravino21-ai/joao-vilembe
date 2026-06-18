@@ -1,0 +1,179 @@
+/*formatação/cores/tipos de letras/fundos,..., do: corpo */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:white;
+}
+/*formatação/cores/tipos de letras/fundos,..., do: cabeçalho*/
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+/*formatação/cores/tipos de letras/fundos,..., do: secção*/
+section{
+    padding:20px;
+    margin:20px;
+    background:#f4f4f4;
+    border-radius:10px;
+}
+/*formatação/cores/tipos de letras/fundos,..., do: rodapé*/
+footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+/*formatação/cores/tipos de letras/fundos,..., do: layout dos cursos  em forma de grelha */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+/*formatação/cores/tipos de letras/fundos,..., do: botão da janela modal dos dados do estudante */
+button{
+    padding:10px 20px;
+    background:#1abc9c;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+/*formatação/cores/tipos de letras/fundos,..., das: duas janelas modal  */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.modal-content{
+    background:white;
+    width:80%;
+    max-width:700px;
+    margin:5% auto;
+    padding:25px;
+    border-radius:10px;
+    max-height:80vh;
+    overflow-y:auto;
+}
+
+.fechar{
+    float:right;
+    font-size:32px;
+    font-weight:bold;
+    cursor:pointer;
+    color:#555;
+}
+
+.fechar:hover{
+    color:red;
+}
+/*formatação/cores/tipos de letras/fundos,..., de:uma divisão do cabeçalho( onde desejo bem ao usuário); */
+
+ .hero {
+            background: #1abc9c;
+            color: white;
+            padding: 60px 20px;
+           text-align: center;}
+ /*formatação de cores/tipos de letras/fundos,..., do: menu de navegação do Website; */ 
+nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+ nav a:hover{
+    color:#1abc9c;
+}
+ nav { background: #34495e;
+        padding: 10px;
+        text-align: center;
+        }
+/*formatação de cores/tipos de letras/fundos,..., dos : cursos; */ 
+.curso:hover{
+    background:#1abc9c;
+    color:white;
+    transform:translateY(-5px);}
+/*formatação de cores/tipos de letras/fundos,..., dos : animação de entrada para as suas janelas modais; */ 
+.modal-content{
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/*formatação de cores/tipos de letras/fundos,..., das : infirmações contidas no cabeçalho; */ 
+.formula-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.formula{
+    flex:1;
+    text-align:center;
+    font-size:0.9em;
+}
+
+/*formatação de cores/tipos de letras/fundos/largura,..., das : imagens e informações da seção galeria. */ 
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+.gallery-content{
+    padding:20px;
+}
+
+.gallery-content h3{
+    margin-bottom:10px;
+}
+
+.gallery-content p{
+    color:#666;
+    line-height:1.6;
+}
+/*formatação de cores/tipos de letras/fundos/largura,..., das : janelas das mensagens. */ 
+ form input, form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
